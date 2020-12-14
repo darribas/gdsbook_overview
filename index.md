@@ -1,11 +1,6 @@
 # Building "Geographic Data Science..."
 
 <CENTER>
-*Universidad de Salta*
-</CENTER>
-
-
-<CENTER>
 <a href="http://darribas.org"><b>Dani Arribas-Bel</b></a>
 <a href="http://twitter/com/darribas">[`@darribas`]</b></a>
 </CENTER>
@@ -298,33 +293,9 @@ Levi Wolf
 <img src="fig/binder_button.jpg" style="width:800px">
 </center>
 
-# Building "Geographic Data Science..."
+# 
+##
 
-<CENTER>
-*Universidad de Salta*
-</CENTER>
+[[`PDF` version of these slides]](./index.pdf)
 
-
-<CENTER>
-<a href="http://darribas.org"><b>Dani Arribas-Bel</b></a>
-<a href="http://twitter/com/darribas">[`@darribas`]</b></a>
-</CENTER>
-
-<table>
-<col width="33%">
-<col width="33%">
-<col width="33%">
-<tr>
-<td>
-<img src="fig/logo.png" style="width:300px;vertical-align:middle">
-</td>
-<td>
-<img src="fig/ati_logo.png" style="width:300px;vertical-align:middle">
-</td>
-<td>
-<img src="fig/gdsl.png" style="width:300px;vertical-align:middle">
-</td>
-</tr>
-</table>
-
-
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"> GDS - The Book </span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
