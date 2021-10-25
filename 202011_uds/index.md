@@ -11,13 +11,13 @@
 <col width="33%">
 <tr>
 <td>
-<img src="fig/logo.png" style="width:300px;vertical-align:middle">
+<img src="../fig/logo.png" style="width:300px;vertical-align:middle">
 </td>
 <td>
-<img src="fig/ati_logo.png" style="width:300px;vertical-align:middle">
+<img src="../fig/ati_logo.png" style="width:300px;vertical-align:middle">
 </td>
 <td>
-<img src="fig/gdsl.png" style="width:300px;vertical-align:middle">
+<img src="../fig/gdsl.png" style="width:300px;vertical-align:middle">
 </td>
 </tr>
 </table>
@@ -93,7 +93,7 @@ Levi Wolf
 ## The Book
 
 <CENTER>
-<img src="fig/venn.png"/>
+<img src="../fig/venn.png"/>
 </CENTER>
 
 ## This Talk
@@ -113,7 +113,7 @@ Levi Wolf
 
 <span class='fragment'> &#x1F4F1; &#x1F4E1; &#x1F30E; ...</span>
 
-</section><section id="batman" class="level2" data-background=fig/batman.png data-background-size=contain data-transition=none>
+</section><section id="batman" class="level2" data-background=../fig/batman.png data-background-size=contain data-transition=none>
 
 ## Geographic Data Science
 
@@ -122,7 +122,7 @@ Levi Wolf
 #
 ## What
 
-## {data-background=fig/toc.png data-background-size=contain data-transition=none}
+## {data-background=../fig/toc.png data-background-size=contain data-transition=none}
 
 ## Building Blocks
 
@@ -186,35 +186,35 @@ Levi Wolf
 <table>
 <tr >
   <td>
-    <img src="fig/data_abb.png" style="width:125px;height:125px;vertical-align:middle">
+    <img src="../fig/data_abb.png" style="width:125px;height:125px;vertical-align:middle">
   </td>
   <td>
-    <img src="fig/data_airports.png" style="width:125px;height:125px;vertical-align:middle">
+    <img src="../fig/data_airports.png" style="width:125px;height:125px;vertical-align:middle">
   </td>
   <td>
-    <img src="fig/data_brexit.png" style="width:125px;height:125px;vertical-align:middle">
-  </td>
-</tr>
-<tr>
-  <td>
-    <img src="fig/data_countries.png" style="width:125px;height:125px;vertical-align:middle">
-  </td>
-  <td>
-    <img src="fig/data_h3.png" style="width:125px;height:125px;vertical-align:middle">
-  </td>
-  <td>
-    <img src="fig/data_mexico.png" style="width:125px;height:125px;vertical-align:middle">
+    <img src="../fig/data_brexit.png" style="width:125px;height:125px;vertical-align:middle">
   </td>
 </tr>
 <tr>
   <td>
-    <img src="fig/data_nasa.png" style="width:125px;height:125px;vertical-align:middle">
+    <img src="../fig/data_countries.png" style="width:125px;height:125px;vertical-align:middle">
   </td>
   <td>
-    <img src="fig/data_tx.png" style="width:125px;height:125px;vertical-align:middle">
+    <img src="../fig/data_h3.png" style="width:125px;height:125px;vertical-align:middle">
   </td>
   <td>
-    <img src="fig/data_tokyo.png" style="width:125px;height:125px;vertical-align:middle">
+    <img src="../fig/data_mexico.png" style="width:125px;height:125px;vertical-align:middle">
+  </td>
+</tr>
+<tr>
+  <td>
+    <img src="../fig/data_nasa.png" style="width:125px;height:125px;vertical-align:middle">
+  </td>
+  <td>
+    <img src="../fig/data_tx.png" style="width:125px;height:125px;vertical-align:middle">
+  </td>
+  <td>
+    <img src="../fig/data_tokyo.png" style="width:125px;height:125px;vertical-align:middle">
   </td>
 </tr>
 </table>
@@ -241,21 +241,21 @@ Levi Wolf
 <td class='fragment'>
 <center>
 <a href="https://geographicdata.science/">
-<img src="fig/site.png" style="width:500px;vertical-align:top">
+<img src="../fig/site.png" style="width:500px;vertical-align:top">
 </a>
 </center>
 </td>
 <td class='fragment'>
 <center>
 <a href="https://github.com/gdsbook/book/">
-<img src="fig/github.png" style="width:500px;vertical-align:top">
+<img src="../fig/github.png" style="width:500px;vertical-align:top">
 </a>
 </center>
 </td>
 <td class='fragment'>
 <center>
 <a href="https://github.com/gdsbook/book/commits/master">
-<img src="fig/commits.png" style="width:500px;vertical-align:top">
+<img src="../fig/commits.png" style="width:500px;vertical-align:top">
 </a>
 </center>
 </td>
@@ -272,14 +272,14 @@ Levi Wolf
 <td>
 <center>
 <a href="https://geographicdata.science/book/notebooks/08_point_pattern_analysis.html#centrography">
-<img src="fig/points.png" style="width:500px;vertical-align:middle">
+<img src="../fig/points.png" style="width:500px;vertical-align:middle">
 </a>
 </center>
 </td>
 <td class='fragment'>
 <center>
 <a href="https://github.com/gdsbook/book/actions">
-<img src="fig/ga_actions.png" style="width:500px;vertical-align:middle">
+<img src="../fig/ga_actions.png" style="width:500px;vertical-align:middle">
 </a>
 </center>
 </td>
@@ -290,7 +290,7 @@ Levi Wolf
 ## Try it out!!!
 
 <center>
-<img src="fig/binder_button.jpg" style="width:800px">
+<img src="../fig/binder_button.jpg" style="width:800px">
 </center>
 
 # 
