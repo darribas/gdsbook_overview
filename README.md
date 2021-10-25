@@ -12,7 +12,7 @@ More information about the book at:
 ## Talks
 
 - [`UDSA` (Argentina, Nov'20)](202011_uds/index.html) [`[PDF]`](202011_ids/index.pdf) [`[YouTube]`](https://www.youtube.com/watch?v=K5wWn5ZOOZ0)
-- [`Geoinformation Science Symposium` (Indonesia, Oct'21)](202110_gss/index.html) [`[PDF]`](202011_ids/index.pdf)
+- [`Geoinformation Science Symposium` (Indonesia, Oct'21)](202110_gss/index.html) [`[PDF]`](202110_gss/index.pdf)
 
 ## License
 
