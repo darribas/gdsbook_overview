@@ -1,33 +1,33 @@
 <!doctype html>
-<html>
+<html lang="en">
+
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>GDS - The Book</title>
+		<title>Geographic Data Science in Python</title>
 
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/journal.css">
+		<meta name="description" content="Geographic Data Science in Python">
+		<meta name="author" content="Dani Arribas-Bel">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="../revealjs/css/reset.css">
+		<link rel="stylesheet" href="../revealjs/css/reveal.css">
+		<link rel="stylesheet" href="../revealjs/css/theme/journal.css" id="theme">
 
 		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/monokai.css">
-
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
+		<link rel="stylesheet" href="../revealjs/plugin/highlight/monokai.css" id="highlight-theme">
 	</head>
+
 	<body>
+
         <!-- BODY -->
 		<div class="reveal">
 			<div class="slides">
 
-                                 
                 <section id="building-geographic-data-science" class="slide level1">
                 <h1>Building “Geographic Data Science…”</h1>
                 <CENTER>
@@ -39,13 +39,13 @@
                 <col width="33%">
                 <tr>
                 <td>
-                <img src="fig/logo.png" style="width:300px;vertical-align:middle">
+                <img src="../fig/logo.png" style="width:300px;vertical-align:middle">
                 </td>
                 <td>
-                <img src="fig/ati_logo.png" style="width:300px;vertical-align:middle">
+                <img src="../fig/ati_logo.png" style="width:300px;vertical-align:middle">
                 </td>
                 <td>
-                <img src="fig/gdsl.png" style="width:300px;vertical-align:middle">
+                <img src="../fig/gdsl.png" style="width:300px;vertical-align:middle">
                 </td>
                 </tr>
                 </table>
@@ -115,7 +115,7 @@
                 <section id="the-book" class="level2">
                 <h2>The Book</h2>
                 <CENTER>
-                <img src="fig/venn.png"/>
+                <img src="../fig/venn.png"/>
                 </CENTER>
                 </section>
                 <section id="this-talk" class="level2">
@@ -138,7 +138,7 @@
                 <p><span class="fragment"> 💾 💻 🤖 Data Science </span></p>
                 <p><span class="fragment"> 📱 📡 🌎 …</span></p>
                 </section>
-                <section id="batman" class="level2" data-background=fig/batman.png data-background-size=contain data-transition=none>
+                <section id="batman" class="level2" data-background=../fig/batman.png data-background-size=contain data-transition=none>
                 </section>
                 <section id="geographic-data-science" class="level2">
                 <h2>Geographic Data Science</h2>
@@ -152,8 +152,8 @@
                 <section id="what" class="level2">
                 <h2>What</h2>
                 </section>
-                <section id="section-4" class="level2" data-background="fig/toc.png" data-background-size="contain" data-transition="none">
-                <h2 data-background="fig/toc.png" data-background-size="contain" data-transition="none"></h2>
+                <section id="section-4" class="level2" data-background="../fig/toc.png" data-background-size="contain" data-transition="none">
+                <h2 data-background="../fig/toc.png" data-background-size="contain" data-transition="none"></h2>
                 </section>
                 <section id="building-blocks" class="level2">
                 <h2>Building Blocks</h2>
@@ -217,35 +217,35 @@
                 <table>
                 <tr>
                 <td>
-                <img src="fig/data_abb.png" style="width:125px;height:125px;vertical-align:middle">
+                <img src="../fig/data_abb.png" style="width:125px;height:125px;vertical-align:middle">
                 </td>
                 <td>
-                <img src="fig/data_airports.png" style="width:125px;height:125px;vertical-align:middle">
+                <img src="../fig/data_airports.png" style="width:125px;height:125px;vertical-align:middle">
                 </td>
                 <td>
-                <img src="fig/data_brexit.png" style="width:125px;height:125px;vertical-align:middle">
-                </td>
-                </tr>
-                <tr>
-                <td>
-                <img src="fig/data_countries.png" style="width:125px;height:125px;vertical-align:middle">
-                </td>
-                <td>
-                <img src="fig/data_h3.png" style="width:125px;height:125px;vertical-align:middle">
-                </td>
-                <td>
-                <img src="fig/data_mexico.png" style="width:125px;height:125px;vertical-align:middle">
+                <img src="../fig/data_brexit.png" style="width:125px;height:125px;vertical-align:middle">
                 </td>
                 </tr>
                 <tr>
                 <td>
-                <img src="fig/data_nasa.png" style="width:125px;height:125px;vertical-align:middle">
+                <img src="../fig/data_countries.png" style="width:125px;height:125px;vertical-align:middle">
                 </td>
                 <td>
-                <img src="fig/data_tx.png" style="width:125px;height:125px;vertical-align:middle">
+                <img src="../fig/data_h3.png" style="width:125px;height:125px;vertical-align:middle">
                 </td>
                 <td>
-                <img src="fig/data_tokyo.png" style="width:125px;height:125px;vertical-align:middle">
+                <img src="../fig/data_mexico.png" style="width:125px;height:125px;vertical-align:middle">
+                </td>
+                </tr>
+                <tr>
+                <td>
+                <img src="../fig/data_nasa.png" style="width:125px;height:125px;vertical-align:middle">
+                </td>
+                <td>
+                <img src="../fig/data_tx.png" style="width:125px;height:125px;vertical-align:middle">
+                </td>
+                <td>
+                <img src="../fig/data_tokyo.png" style="width:125px;height:125px;vertical-align:middle">
                 </td>
                 </tr>
                 </table>
@@ -274,17 +274,17 @@
                 <tr>
                 <td class="fragment">
                 <center>
-                <a href="https://geographicdata.science/"> <img src="fig/site.png" style="width:500px;vertical-align:top"> </a>
+                <a href="https://geographicdata.science/"> <img src="../fig/site.png" style="width:500px;vertical-align:top"> </a>
                 </center>
                 </td>
                 <td class="fragment">
                 <center>
-                <a href="https://github.com/gdsbook/book/"> <img src="fig/github.png" style="width:500px;vertical-align:top"> </a>
+                <a href="https://github.com/gdsbook/book/"> <img src="../fig/github.png" style="width:500px;vertical-align:top"> </a>
                 </center>
                 </td>
                 <td class="fragment">
                 <center>
-                <a href="https://github.com/gdsbook/book/commits/master"> <img src="fig/commits.png" style="width:500px;vertical-align:top"> </a>
+                <a href="https://github.com/gdsbook/book/commits/master"> <img src="../fig/commits.png" style="width:500px;vertical-align:top"> </a>
                 </center>
                 </td>
                 </tr>
@@ -298,12 +298,12 @@
                 <tr>
                 <td>
                 <center>
-                <a href="https://geographicdata.science/book/notebooks/08_point_pattern_analysis.html#centrography"> <img src="fig/points.png" style="width:500px;vertical-align:middle"> </a>
+                <a href="https://geographicdata.science/book/notebooks/08_point_pattern_analysis.html#centrography"> <img src="../fig/points.png" style="width:500px;vertical-align:middle"> </a>
                 </center>
                 </td>
                 <td class="fragment">
                 <center>
-                <a href="https://github.com/gdsbook/book/actions"> <img src="fig/ga_actions.png" style="width:500px;vertical-align:middle"> </a>
+                <a href="https://github.com/gdsbook/book/actions"> <img src="../fig/ga_actions.png" style="width:500px;vertical-align:middle"> </a>
                 </center>
                 </td>
                 </tr>
@@ -315,7 +315,7 @@
                 <section id="try-it-out" class="level2">
                 <h2>Try it out!!!</h2>
                 <center>
-                <img src="fig/binder_button.jpg" style="width:800px">
+                <img src="../fig/binder_button.jpg" style="width:800px">
                 </center>
                 </section>
                 </section>
@@ -327,27 +327,34 @@
                 <p><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"> GDS - The Book </span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
                 </section>
                 </section>
+
 			</div>
 		</div>
 
         <!-- DEPENDENCIES -->
-		<script src="js/reveal.js"></script>
-
+		<script src="../revealjs/js/reveal.js"></script>
+		<script src="../revealjs/plugin/zoom-js/zoom.js"></script>
+		<script src="../revealjs/plugin/notes/notes.js"></script>
+		<script src="../revealjs/plugin/search/search.js"></script>
+		<script src="../revealjs/plugin/markdown/marked.js"></script>
+		<script src="../revealjs/plugin/markdown/markdown.js"></script>
+		<script src="../revealjs/plugin/highlight/highlight.js"></script>
 		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
 			Reveal.initialize({
-                controlsTutorial: false,
-                history: true,
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true }
-				]
+				controls: true,
+				controlsTutorial: false,
+				progress: true,
+				center: true,
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
 			});
+
 		</script>
-        <!-- END of BODY -->
+
 	</body>
 </html>
