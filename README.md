@@ -3,8 +3,7 @@
 Introductory slides for the [GDS Book](https://geographicdata.science) project
 by Serge Rey, Dani Arribas-Bel and Levi Wolf.
 
-This is an evolving repo serving and keeping track different versions of the
-overview of the book project.
+This is an evolving [repo](https://darribas.org/gdsbook_overview) serving and keeping track of talks about the book project.
 
 More information about the book at:
 
