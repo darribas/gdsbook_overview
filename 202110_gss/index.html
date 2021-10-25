@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Geographic Data Science in Python</title>
+
+		<meta name="description" content="Geographic Data Science in Python">
+		<meta name="author" content="Dani Arribas-Bel">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="../revealjs/css/reset.css">
+		<link rel="stylesheet" href="../revealjs/css/reveal.css">
+		<link rel="stylesheet" href="../revealjs/css/theme/journal.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="../revealjs/plugin/highlight/monokai.css" id="highlight-theme">
+	</head>
+
+	<body>
+
+        <!-- BODY -->
+		<div class="reveal">
+			<div class="slides">
+
+                <section id="building-geographic-data-science" class="slide level1">
+                <h1>Building “Geographic Data Science…”</h1>
+                <CENTER>
+                <a href="http://darribas.org"><b>Dani Arribas-Bel</b></a> <a href="http://twitter.com/darribas">[<code>@darribas</code>]</b></a>
+                </CENTER>
+                <table>
+                <col width="33%">
+                <col width="33%">
+                <col width="33%">
+                <tr>
+                <td>
+                <a href="https://liverpool.ac.uk"><img src="../fig/logo.png"
+                style="width:300px;vertical-align:middle"></a>
+                </td>
+                <td>
+                <a href="https://turing.ac.uk"><img src="../fig/ati_logo.png"
+                style="width:300px;vertical-align:middle"></a>
+                </td>
+                <td>
+                <a href="https://liverpool.ac.uk/geographic-data-science"><img src="../fig/gdsl.png"
+                style="width:300px;vertical-align:middle"></a>
+                </td>
+                </tr>
+                </table>
+                </section>
+                <section id="section" class="slide level1">
+                <h1></h1>
+                <section id="this-talk" class="level2">
+                <h2>This talk</h2>
+                <center>
+                <img src="../fig/qr_talk.gif" style="width:350px;vertical-align:middle">
+                </center>
+                <p><a href="https://darribas.org/gdsbook_overview/202109_gss/index.html"><code>darribas.org/gdsbook_overview/202109_gss/</code></a></p>
+                </section>
+                </section>
+                <section id="section-1" class="slide level1">
+                <h1></h1>
+                <section id="we-have-a-book" class="level2">
+                <h2>We have a book!</h2>
+                <iframe src="https://giphy.com/embed/LkjlH3rVETgsg" width="750" height="200" frameBorder="0" class="giphy-embed" allowFullScreen>
+                </iframe>
+                <p>
+                <a href="https://giphy.com/gifs/cat-book-reading-LkjlH3rVETgsg"><small>via GIPHY</small></a>
+                </p>
+                </section>
+                <section id="almost" class="level2">
+                <h2>Almost…</h2>
+                <iframe src="https://giphy.com/embed/R2m2NzVxQ3pbG" width="750" height="300" frameBorder="0" class="giphy-embed" allowFullScreen>
+                </iframe>
+                <p>
+                <a href="https://giphy.com/gifs/reactiongifs-R2m2NzVxQ3pbG"><small>via GIPHY</small></a>
+                </p>
+                <p>Coming “soon” but…</p>
+                </section>
+                <section id="coming-soon-but" class="level2">
+                <h2>Coming “soon” but…</h2>
+                <p>… you can already:</p>
+                <ul>
+                <li>📖 <a href="https://geographicdata.science"><code>https://geographicdata.science</code></a></li>
+                <li>💻 <a href="https://mybinder.org/v2/gh/gdsbook/book/HEAD"><img data-src="https://mybinder.org/badge_logo.svg" alt="Binder" /></a></li>
+                <li>💡 <a href="https://github.com/gdsbook/book"><code>https://github.com/gdsbook/book</code></a></li>
+                </ul>
+                <CENTER>
+                <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a>
+                </CENTER>
+                </section>
+                <section id="the-authors" class="level2">
+                <h2>The Authors</h2>
+                <table>
+                <col width="30%">
+                <col width="30%">
+                <col width="30%">
+                <tr>
+                <td>
+                <CENTER>
+                <img src="https://sergerey.org/images/profile.png" height="200" width="200"/>
+                </CENTER>
+                <p><a href="https://twitter.com/sreyog"><code>@sreyog</code></a></p>
+                <p>Serge Rey</p>
+                </td>
+                <td>
+                <CENTER>
+                <img src="https://pbs.twimg.com/profile_images/1320482326082658304/0ff6Oo2I_400x400.jpg" height="200" width="200"/>
+                </CENTER>
+                <p><a href="https://twitter.com/darribas"><code>@darribas</code></a></p>
+                <p>Dani Arribas-Bel</p>
+                </td>
+                <td>
+                <CENTER>
+                <img src="https://pbs.twimg.com/profile_images/1001772281587216385/hCx6Gls6_400x400.jpg" height="200" width="200"/>
+                </CENTER>
+                <p><a href="https://twitter.com/levijohnwolf"><code>@levijohnwolf</code></a></p>
+                <p>Levi Wolf</p>
+                </td>
+                </tr>
+                </table>
+                </section>
+                <section id="today" class="level2">
+                <h2>Today</h2>
+                <ul>
+                <li><em>Why?</em> - Principles</li>
+                <li><em>What?</em> - Book</li>
+                <li><em>How?</em> - Infrastructure &amp; community</li>
+                </ul>
+                </section>
+                </section>
+                <section id="section-2" class="slide level1">
+                <h1></h1>
+                <section id="why" class="level2">
+                <h2><em>Why?</em></h2>
+                </section>
+                <section id="section-3" class="level2">
+                <h2></h2>
+                <p>🔢 📊 📈 Data, data, data</p>
+                <p><span class="fragment"> 💾 💻 🤖 Data Science </span></p>
+                <p><span class="fragment"> 📱 📡 🌎 …</span></p>
+                </section>
+                <section id="batman" class="level2" data-background=../fig/batman.png data-background-size=contain data-transition=none>
+                </section>
+                <section id="geographic-data-science" class="level2">
+                <h2>Geographic Data Science</h2>
+                <center>
+                🌎 🔢 🤖
+                </center>
+                <table>
+                <col width="70%">
+                <col width="30%">
+                <tr>
+                <td>
+                <p><a href="https://onlinelibrary.wiley.com/doi/full/10.1111/gean.12194"><img src="../fig/gds_paper.png" style="width:500px;vertical-align:middle"></a></p>
+                </td>
+                <td>
+                <p><img src="../fig/qr_gds_paper.gif" style="width:450px;vertical-align:middle"></p>
+                </tr>
+                </table>
+                </section>
+                <section id="geographic-data-science-1" class="level2">
+                <h2>Geographic Data Science</h2>
+                <ul>
+                <li><span class="hlg">GIScience</span> <span class="math inline">↔︎</span> <span class="hlg">Data Science</span></li>
+                <li>Foster <span class="hlg">innovation</span> (avoid reinventing the wheel)</li>
+                <li>Grow a <span class="hlg">community</span> around collaboration (1+1&gt;2)</li>
+                </ul>
+                </section>
+                </section>
+                <section id="section-4" class="slide level1">
+                <h1></h1>
+                <section id="what" class="level2">
+                <h2><em>What?</em></h2>
+                </section>
+                <section id="the-book-is" class="level2">
+                <h2>The Book is…</h2>
+                <CENTER>
+                <img src="../fig/venn.png"/>
+                </CENTER>
+                </section>
+                <section id="the-book-is-not" class="level2">
+                <h2>The Book is <em>not</em>…</h2>
+                <ul>
+                <li>A GIS starter</li>
+                <li>An introduction to programming</li>
+                <li>An in-depth volume (rather <em>in-breath</em>)</li>
+                </ul>
+                </section>
+                <section id="the-book-is-for" class="level2">
+                <h2>The Book is for…</h2>
+                <ul>
+                <li><span class="hlg">Data Scientists</span> who work on spatial problems</li>
+                <li><span class="hlg">GIScientists</span> who want to “update”</li>
+                <li><span class="hlg">(Social) Scientists</span> getting started in geospatial</li>
+                </ul>
+                </section>
+                <section id="section-5" class="level2" data-background="../fig/toc.png" data-background-size="contain" data-transition="none">
+                <h2 data-background="../fig/toc.png" data-background-size="contain" data-transition="none"></h2>
+                </section>
+                <section id="giscience-data-science" class="level2">
+                <h2>GIScience + Data Science</h2>
+                <table>
+                <col width="33%">
+                <col width="33%">
+                <tr>
+                <td>
+                <ul>
+                <li><code>geopandas</code></li>
+                <li><code>rasterio</code></li>
+                <li><code>pysal</code></li>
+                <li><code>osmnx</code></li>
+                <li><code>contextily</code></li>
+                </ul>
+                </td>
+                <td>
+                <ul>
+                <li><code>pandas</code></li>
+                <li><code>xarray</code></li>
+                <li><code>scikit-learn</code></li>
+                <li><code>matplotlib</code></li>
+                <li><code>seaborn</code></li>
+                </ul>
+                </td>
+                </tr>
+                </table>
+                </section>
+                <section id="bonus-datasets" class="level2">
+                <h2>Bonus: Datasets</h2>
+                <table>
+                <tr>
+                <td>
+                <a href="https://geographicdata.science/book/data/airbnb/regression_cleaning.html"><img src="../fig/data_abb.png" style="width:125px;height:125px;vertical-align:middle"></a>
+                </td>
+                <td>
+                <a href="https://geographicdata.science/book/data/airports/airports_cleaning.html"><img src="../fig/data_airports.png" style="width:125px;height:125px;vertical-align:middle"></a>
+                </td>
+                <td>
+                <a href="https://geographicdata.science/book/data/brexit/brexit_cleaning.html"><img src="../fig/data_brexit.png" style="width:125px;height:125px;vertical-align:middle"></a>
+                </td>
+                </tr>
+                <tr>
+                <td>
+                <a href="https://geographicdata.science/book/data/countries/countries_cleaning.html"><img src="../fig/data_countries.png" style="width:125px;height:125px;vertical-align:middle"></a>
+                </td>
+                <td>
+                <a href="https://geographicdata.science/book/data/h3_grid/build_sd_h3_grid.html"><img src="../fig/data_h3.png" style="width:125px;height:125px;vertical-align:middle"></a>
+                </td>
+                <td>
+                <a href="https://geographicdata.science/book/data/mexico/README.html"><img src="../fig/data_mexico.png" style="width:125px;height:125px;vertical-align:middle"></a>
+                </td>
+                </tr>
+                <tr>
+                <td>
+                <a href="https://geographicdata.science/book/data/nasadem/build_nasadem_sd.html"><img src="../fig/data_nasa.png" style="width:125px;height:125px;vertical-align:middle"></a>
+                </td>
+                <td>
+                <a href="https://geographicdata.science/book/data/texas/README.html"><img src="../fig/data_tx.png" style="width:125px;height:125px;vertical-align:middle"></a>
+                </td>
+                <td>
+                <a href="https://geographicdata.science/book/data/tokyo/tokyo_cleaning.html"><img src="../fig/data_tokyo.png" style="width:125px;height:125px;vertical-align:middle"></a>
+                </td>
+                </tr>
+                </table>
+                </section>
+                </section>
+                <section id="section-6" class="slide level1">
+                <h1></h1>
+                <section id="how" class="level2">
+                <h2><em>How?</em></h2>
+                </section>
+                <section id="python" class="level2">
+                <h2>Python</h2>
+                <center>
+                <img src="https://imgs.xkcd.com/comics/python.png" style="height:500px;vertical-align:middle">
+                </center>
+                <p class="pie">
+                <a href="https://imgs.xkcd.com/comics/python.png">Source</a>
+                </p>
+                </section>
+                <section id="radically-open" class="level2">
+                <h2>Radically Open</h2>
+                <table>
+                <col width="30%">
+                <col width="30%">
+                <col width="30%">
+                <tr>
+                <td class="fragment">
+                <center>
+                <a href="https://geographicdata.science/"> <img src="../fig/site.png" style="width:500px;vertical-align:top"> </a>
+                </center>
+                </td>
+                <td class="fragment">
+                <center>
+                <a href="https://github.com/gdsbook/book/"> <img src="../fig/github.png" style="width:500px;vertical-align:top"> </a>
+                </center>
+                </td>
+                <td class="fragment">
+                <center>
+                <a href="https://github.com/gdsbook/book/commits/master"> <img src="../fig/commits.png" style="width:500px;vertical-align:top"> </a>
+                </center>
+                </td>
+                </tr>
+                </table>
+                </section>
+                <section id="code-as-text-text-as-code" class="level2">
+                <h2>Code as text; <span class="fragment" data-fragment-index="1">text as codE</span></h2>
+                <table>
+                <col width="50%">
+                <col width="50%">
+                <tr>
+                <td>
+                <center>
+                <a href="https://geographicdata.science/book/notebooks/08_point_pattern_analysis.html#centrography"> <img src="../fig/points.png" style="width:500px;vertical-align:middle"> </a>
+                </center>
+                </td>
+                <td class="fragment" data-fragment-index="1">
+                <center>
+                <a href="https://github.com/gdsbook/book/actions"> <img src="../fig/ga_actions.png" style="width:500px;vertical-align:middle"> </a>
+                </center>
+                </td>
+                </tr>
+                </table>
+                </section>
+                <section id="runs-anywhere" class="level2">
+                <h2>Runs <em>anywhere</em>…</h2>
+                <table>
+                <col width="70%">
+                <col width="30%">
+                <tr>
+                <td>
+                <p><a href="https://darribas.org/gds_env"><img src="../fig/gds_env.png" style="width:500px;vertical-align:middle"></a></p>
+                <p><code>darribas.org/gds_env</code></p>
+                </td>
+                <td>
+                <p><img src="../fig/qr_gds_env.gif" style="width:250px;vertical-align:middle"></p>
+                </tr>
+                </table>
+                </section>
+                <section id="by-anyone" class="level2">
+                <h2>… by <em>anyone</em></h2>
+                <table>
+                <col width="70%">
+                <col width="30%">
+                <tr>
+                <td>
+                <p><a href="https://gdsl-ul.github.io/soft_install"><img src="../fig/soft_install.png" style="width:400px;vertical-align:middle"></a></p>
+                </td>
+                <td>
+                <p><img src="../fig/qr_soft_install.gif" style="width:250px;vertical-align:middle"></p>
+                </tr>
+                </table>
+                <p><code>gdsl-ul.github.io/soft_install</code></p>
+                </section>
+                </section>
+                <section id="section-7" class="slide level1">
+                <h1></h1>
+                <section id="try-it-out" class="level2">
+                <h2>Try it out…</h2>
+                <center>
+                <img src="../fig/binder_button.jpg" style="width:800px">
+                </center>
+                </section>
+                </section>
+                <section id="section-8" class="slide level1">
+                <h1></h1>
+                <section id="and-make-it-better" class="level2">
+                <h2>…and make it better!!!</h2>
+                <center>
+                <a href="github.com/gdsbook/book/issues/new"><img src="../fig/new_issue.png" style="height:400px"></a>
+                </center>
+                <p><code>github.com/gdsbook/book/issues/new</code></p>
+                </section>
+                </section>
+                <section id="building-geographic-data-science-1" class="slide level1">
+                <h1>Building “Geographic Data Science…”</h1>
+                <CENTER>
+                <a href="http://darribas.org"><b>Dani Arribas-Bel</b></a> <a href="http://twitter.com/darribas">[<code>@darribas</code>]</b></a>
+                </CENTER>
+                <table>
+                <col width="33%">
+                <col width="33%">
+                <col width="33%">
+                <tr>
+                <td>
+                <a href="https://liverpool.ac.uk"><img src="../fig/logo.png"
+                style="width:300px;vertical-align:middle"></a>
+                </td>
+                <td>
+                <a href="https://turing.ac.uk"><img src="../fig/ati_logo.png"
+                style="width:300px;vertical-align:middle"></a>
+                </td>
+                <td>
+                <a href="https://liverpool.ac.uk/geographic-data-science"><img src="../fig/gdsl.png"
+                style="width:300px;vertical-align:middle"></a>
+                </td>
+                </tr>
+                </table>
+                </section>
+                <section id="section-9" class="slide level1">
+                <h1></h1>
+                <section id="section-10" class="level2">
+                <h2></h2>
+                <p><a href="./index.pdf">[<code>PDF</code> version of these slides]</a></p>
+                <p><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"> These slides </span> are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+                </section>
+                </section>
+
+			</div>
+		</div>
+
+        <!-- DEPENDENCIES -->
+		<script src="../revealjs/js/reveal.js"></script>
+		<script src="../revealjs/plugin/zoom-js/zoom.js"></script>
+		<script src="../revealjs/plugin/notes/notes.js"></script>
+		<script src="../revealjs/plugin/search/search.js"></script>
+		<script src="../revealjs/plugin/markdown/marked.js"></script>
+		<script src="../revealjs/plugin/markdown/markdown.js"></script>
+		<script src="../revealjs/plugin/highlight/highlight.js"></script>
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				controlsTutorial: false,
+				progress: true,
+				center: true,
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+
+		</script>
+
+	</body>
+</html>
