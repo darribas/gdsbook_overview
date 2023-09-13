@@ -14,6 +14,7 @@ More information about the book at:
 - `UDSA` (Argentina, Nov'20)[`[HTML]`](202011_uds/index.html) [`[PDF]`](202011_ids/index.pdf) [`[YouTube]`](https://www.youtube.com/watch?v=K5wWn5ZOOZ0)
 - [`Geoinformation Science Symposium`](https://gss.geo.ugm.ac.id/gss-2021) (Indonesia/virtual, Oct'21) [`[HTML]`](202110_gss/index.html) [`[PDF]`](202110_gss/index.pdf)
 - [`International Conference on Geospatial Information Sciences`](https://igisc.org/) (Mexico/virtual, Nov'21) [`[HTML]`](202111_cg/index.html) [`[PDF]`](202111_cg/index.pdf)
+- [`GDSL`](202309_gdsl/index.html)
 
 ## License
 
